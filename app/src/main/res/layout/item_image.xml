@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/SCREEN"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180dp">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_40dp"
+            app:cardElevation="@dimen/_10dp"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRAdius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_83dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/TEXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    style="@style/TEXT"
+                    android:gravity="center"
+                    android:text="@string/ogrenci"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/cardview_light_background" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:src="@drawable/baseline_person_2_24"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:elevation="15dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="98dp"
+        android:layout_height="98dp"/>
+
+
+</RelativeLayout>

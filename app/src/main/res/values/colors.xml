@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#aab8c0</color>
+    <color name="splashScreen">#607D8B </color>
+    <color name="textHome">#34495E</color>
+</resources>

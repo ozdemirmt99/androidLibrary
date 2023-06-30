@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/SCREEN"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical"
+        android:text="@string/hosgeldiniz"
+        android:textColor="@color/textHome"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_95dp"
+        android:text="@string/okudugun_kitap_sayisi"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="@dimen/_146dp"
+        android:layout_height="@dimen/_44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="14"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_35dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_45dp"
+        android:text="@string/okumayi_hedefledigin_kitap_sayisi"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView11"
+        app:layout_constraintBottom_toTopOf="@id/label"
+        app:layout_constraintLeft_toRightOf="@id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="@dimen/_146dp"
+        android:layout_height="@dimen/_62dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="22"
+        app:layout_constraintTop_toBottomOf="@id/textView14"
+        app:layout_constraintLeft_toRightOf="@id/editTextNumber"
+        android:layout_marginLeft="@dimen/_35dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_125dp"
+        android:text="@string/guluk_okunacak_kitap_sayisi"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView14" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="@dimen/_146dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="35"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_12dp"
+        />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_125dp"
+        android:text="@string/okumaya_devam_ettigin_kitap_sayisi"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/textView12"
+        app:layout_constraintTop_toBottomOf="@id/textView14" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="@dimen/_146dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="24"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textView13"
+        app:layout_constraintLeft_toRightOf="@id/textView12"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginLeft="@dimen/_25dp"/>
+
+    <Switch
+        android:id="@+id/aswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7dp"
+        android:layout_marginEnd="@dimen/_4dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:src="@drawable/baseline_wb_sunny_24"
+        app:layout_constraintEnd_toStartOf="@+id/aswitch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:src="@drawable/baseline_dark_mode_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

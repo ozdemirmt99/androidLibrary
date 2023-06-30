@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Library" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#34495E       </item> <!--     -->
+        <item name="colorPrimaryDark">#2C3E50       </item>
+        <item name="colorAccent">#607D8B       </item>
+    </style>
+
+
+    <style name="Theme.Library" parent="Base.Theme.Library" />
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Splash Screen theme definition-->
+    <style name="splashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splashScreen</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/gray</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/library_icon_foreground</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.Library</item>
+
+    </style>
+
+         <!-- Light mode-->
+         <style name="SCREEN">
+             <item name="android:background">#FFF</item>
+         </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+
+
+</resources>
